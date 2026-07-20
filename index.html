@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vicente Eletricista | Soluções Técnicas de Precisão</title>
+<!-- Fontes Google -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Hanken+Grotesk:wght@400;500&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@100..900&family=Hanken+Grotesk:wght@100..900&family=Space+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#e5e2e1",
+                    "background": "#f7f9fc",
+                    "surface-container-low": "#f2f4f7",
+                    "inverse-surface": "#2d3133",
+                    "outline": "#906f6c",
+                    "on-secondary-container": "#003663",
+                    "primary": "#b7131a",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#5c5c5c",
+                    "on-secondary-fixed": "#001c38",
+                    "surface-bright": "#f7f9fc",
+                    "inverse-primary": "#ffb4ac",
+                    "surface-variant": "#e0e3e6",
+                    "secondary-container": "#47a1ff",
+                    "surface-container": "#eceef1",
+                    "surface-container-high": "#e6e8eb",
+                    "secondary-fixed": "#d3e4ff",
+                    "tertiary-container": "#757474",
+                    "on-surface": "#191c1e",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "primary-fixed": "#ffdad6",
+                    "primary-fixed-dim": "#ffb4ac",
+                    "secondary": "#0060a8",
+                    "surface-tint": "#bb171c",
+                    "surface-container-highest": "#e0e3e6",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed-dim": "#a2c9ff",
+                    "on-primary-fixed": "#410002",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary-container": "#db322f",
+                    "surface-dim": "#d8dadd",
+                    "on-tertiary-container": "#fffcfb",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#5b403d",
+                    "on-background": "#191c1e",
+                    "outline-variant": "#e4beb9",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#93000d",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#fffbff",
+                    "surface": "#f7f9fc",
+                    "on-secondary-fixed-variant": "#004881",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-gap": "120px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-technical": ["Space Mono"],
+                    "display-lg-mobile": ["Archivo Narrow"],
+                    "display-lg": ["Archivo Narrow"],
+                    "headline-md": ["Archivo Narrow"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-technical": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["72px", {"lineHeight": "76px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .technical-grid {
+        background-image: radial-gradient(circle, #212121 1px, transparent 1px);
+        background-size: 32px 32px;
+        opacity: 0.05;
+      }
+      .asymmetric-border {
+        border-left: 2px solid #b7131a;
+        padding-left: 24px;
+      }
+      .plus-marker::after {
+        content: '+';
+        position: absolute;
+        font-family: 'Space Mono';
+        color: #b7131a;
+        font-size: 14px;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-white overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface z-50 border-b-2 border-on-surface/10">
+<nav class="flex justify-between items-center px-margin-desktop py-unit max-w-full">
+<div class="flex items-center gap-4">
+<img alt="Vicente Eletricista Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrieM7X0t0vBdTjv9u8G-PElqBAB8BC50Lbi0bn3VLdlJGPxEutrifDqhK5lipWItG5DLKBCYGYPGTPLKxkDFw_G5nLt6s87liiHNhEeZc1-Qemu4alwyS75xK6vVgUGYC7ZB9Eg0rqtDwWLRU18zX4QDLx4sefWtcgpeRdEjCJJD_2nTBrEIdZQWMj4fVzDt8TD48ZVNI60j_CCQG7kisklvuVe0QtUikCnbYgePIca69ykBfxnBH0sq973mMcKTOvX4_ma8GqeQB"/>
+<span class="font-headline-md text-headline-md font-bold text-on-surface uppercase tracking-tighter">VOLT_PRECISION</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-label-technical text-label-technical uppercase tracking-widest">
+<a class="text-on-surface hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Emergency</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-on-surface/60 cursor-pointer hover:text-primary transition-colors">chat</span>
+<a class="bg-primary text-on-primary px-6 py-3 font-label-technical text-label-technical uppercase tracking-widest hover:bg-on-background transition-all active:opacity-80" href="https://wa.me/551125535246">
+                    Falar no WhatsApp
+                </a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col md:flex-row items-center px-margin-desktop py-margin-desktop overflow-hidden">
+<div class="absolute inset-0 technical-grid pointer-events-none"></div>
+<!-- Left Typography -->
+<div class="z-10 md:w-5/12 flex flex-col justify-center gap-8 relative">
+<div class="absolute -top-12 -left-4 font-label-technical text-primary/30 text-[64px] select-none">V_01</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight">
+                    Soluções técnicas <span class="text-primary">rápidas</span> e seguras para você.
+                </h1>
+<p class="font-body-lg text-body-lg text-tertiary max-w-md asymmetric-border">
+                    Manutenção profissional e projetos elétricos executados com rigor técnico. Atendimento focado em precisão para residências e empresas de alto padrão.
+                </p>
+<div class="flex gap-4 mt-8">
+<button class="bg-primary text-on-primary px-10 py-5 font-headline-md text-body-md uppercase font-bold tracking-wider hover:bg-on-background transition-colors flex items-center gap-2">
+<span>GET_STARTED</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Visual -->
+<div class="mt-12 md:mt-0 md:w-7/12 md:ml-gutter relative">
+<div class="relative z-10 w-full aspect-[4/5] md:aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional electrician in a grey work uniform with an orange logo on the sleeve, meticulously working on an open electrical control panel. He is using a red-handled screwdriver in one hand and holding a yellow digital multimeter in the other, wearing thick protective gloves. The scene is lit by natural daylight from a nearby window, creating a clean, high-end technical atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTiWD4V1SQGcd3C7hK0XX4_OAimPgggcNWcRgCSPNmbKtnQATR6skz1FUGYifaZkYNrWmsnuBPLRturXgfoOrddc9EtosNs6P_e4XuK8jJ-rC1tOGnSnz3rZ9J48-d2ASoOHY1BFSGFTWb6ulZ5ArWPWhu735XEx6MMEMFH4tOgB1vO0p9vmtb-75BOA6nHZvBhbwfNwRv8IbvdWIQjL35z7WRVfupczOIVe1hFjrwuk8MoHf_8m1Fxrd81ukaP5nERwFjkzmcodPL"/>
+</div>
+<!-- Technical Accents -->
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 border border-primary/20 -z-0"></div>
+<div class="absolute top-4 right-4 plus-marker"></div>
+<div class="absolute bottom-4 left-4 plus-marker"></div>
+<div class="absolute bottom-12 -left-12 bg-on-background p-6 text-surface hidden md:block max-w-xs border-l-4 border-primary">
+<div class="font-label-technical text-primary mb-2">TECHNICAL_AUTH</div>
+<p class="font-body-md text-body-md leading-relaxed opacity-80">
+                        Cada conexão é testada sob protocolos de segurança internacionais. Compromisso com a integridade do sistema.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Section: Asymmetric Blocks -->
+<section class="px-margin-desktop py-section-gap relative" id="services">
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Header Block -->
+<div class="md:w-4/12 flex flex-col gap-4">
+<span class="font-label-technical text-primary uppercase tracking-[0.2em]">02 // SERVIÇOS</span>
+<h2 class="font-headline-md text-display-lg-mobile text-on-background">EXCELÊNCIA EM INFRAESTRUTURA</h2>
+<div class="h-1 w-24 bg-primary mt-4"></div>
+</div>
+<!-- Bento Grid Style Services -->
+<div class="md:w-8/12 grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Block 1: Atendimento Rápido -->
+<div class="p-10 border-2 border-on-surface/5 bg-white relative group overflow-hidden">
+<div class="absolute top-4 right-4 font-label-technical text-on-surface/20">SRV_RDP</div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="font-headline-md text-headline-md mb-4">Atendimento Rápido</h3>
+<p class="font-body-md text-body-md text-tertiary">Tempo de resposta otimizado para situações de urgência. Diagnóstico preciso e execução imediata para evitar interrupções prolongadas.</p>
+<div class="mt-8 flex items-center text-primary font-label-technical uppercase gap-2 cursor-pointer group-hover:translate-x-2 transition-transform">
+                            Details <span class="material-symbols-outlined">add</span>
+</div>
+</div>
+<!-- Block 2: Segurança Garantida (Highlight) -->
+<div class="p-10 border-2 border-secondary bg-secondary/5 relative md:row-span-2 flex flex-col justify-between">
+<div>
+<div class="absolute top-4 right-4 font-label-technical text-secondary/30">SRV_SEC</div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-headline-md text-headline-md mb-4">Segurança Garantida</h3>
+<p class="font-body-md text-body-md text-tertiary">Implementação de normas NR10 e NBR5410. Utilizamos apenas componentes certificados para garantir a máxima proteção do seu patrimônio.</p>
+</div>
+<ul class="mt-12 space-y-3">
+<li class="flex items-center gap-3 font-label-technical text-on-surface">
+<div class="w-2 h-2 bg-primary"></div> LAUDOS TÉCNICOS
+                            </li>
+<li class="flex items-center gap-3 font-label-technical text-on-surface">
+<div class="w-2 h-2 bg-primary"></div> ATERRAMENTO PRECISÃO
+                            </li>
+<li class="flex items-center gap-3 font-label-technical text-on-surface">
+<div class="w-2 h-2 bg-primary"></div> QUADROS DE FORÇA
+                            </li>
+</ul>
+</div>
+<!-- Block 3: Solução Imediata -->
+<div class="p-10 border-2 border-on-surface/5 bg-white relative">
+<div class="absolute top-4 right-4 font-label-technical text-on-surface/20">SRV_SOL</div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">construction</span>
+<h3 class="font-headline-md text-headline-md mb-4">Solução Imediata</h3>
+<p class="font-body-md text-body-md text-tertiary">Abordagem resolutiva para problemas complexos. Da manutenção preventiva à instalação de sistemas inteligentes.</p>
+<div class="mt-8 flex items-center text-primary font-label-technical uppercase gap-2 cursor-pointer">
+                            Support <span class="material-symbols-outlined">trending_flat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Quote Section -->
+<section class="bg-on-background py-section-gap px-margin-desktop text-surface overflow-hidden relative">
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="font-display-lg text-[200px] leading-none select-none">VC</span>
+</div>
+<div class="max-w-4xl relative z-10">
+<p class="font-label-technical text-primary mb-8 uppercase tracking-widest">PHILOSOPHY_STMT</p>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight italic">
+                    "A eletricidade não perdoa o erro. A precisão é a única linguagem que aceitamos."
+                </h2>
+<div class="mt-12 flex items-center gap-4">
+<div class="w-12 h-[2px] bg-primary"></div>
+<span class="font-label-technical uppercase">Vicente C. | Master Electrician</span>
+</div>
+</div>
+</section>
+<!-- CTA / WhatsApp Section -->
+<section class="py-section-gap px-margin-desktop">
+<div class="border-2 border-primary p-12 md:p-24 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+<div class="absolute inset-0 technical-grid pointer-events-none opacity-[0.03]"></div>
+<div class="md:w-1/2">
+<h2 class="font-display-lg text-display-lg-mobile text-on-background mb-6">Precisa de suporte agora?</h2>
+<p class="font-body-lg text-tertiary">Estamos prontos para o despacho imediato. Entre em contato técnico via canal direto.</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<a class="font-headline-md text-display-lg-mobile text-on-background hover:text-primary transition-colors" href="tel:1125535246">
+                        (11) 2553-5246
+                    </a>
+<a class="bg-primary text-on-primary px-12 py-6 font-headline-md text-body-md uppercase font-bold tracking-widest hover:bg-on-background transition-all flex items-center gap-4 group" href="https://wa.me/551125535246">
+                        INICIAR CONVERSA
+                        <span class="material-symbols-outlined group-hover:rotate-45 transition-transform">send</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-on-surface py-margin-desktop px-margin-desktop border-t-2 border-primary">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter text-surface">
+<!-- Brand Column -->
+<div class="md:col-span-4 space-y-6">
+<h2 class="font-headline-md text-headline-md text-surface uppercase font-bold tracking-tighter">VOLT_PRECISION</h2>
+<p class="font-body-md text-body-md text-tertiary opacity-80">
+                    Engenharia elétrica aplicada com rigor editorial. Segurança, performance e transparência em cada projeto.
+                </p>
+<div class="font-label-technical text-primary">STATUS: OPERATIONAL_24/7</div>
+</div>
+<!-- Links Column -->
+<div class="md:col-span-4 md:col-start-6 space-y-4">
+<h3 class="font-label-technical uppercase tracking-widest text-primary mb-6">RESOURCES</h3>
+<nav class="flex flex-col gap-3 font-label-technical text-label-technical uppercase">
+<a class="text-tertiary hover:text-primary transition-colors" href="#">Emergency Dispatch</a>
+<a class="text-tertiary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-tertiary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-tertiary hover:text-primary transition-colors" href="#">Contact Support</a>
+</nav>
+</div>
+<!-- Contact Info -->
+<div class="md:col-span-3 space-y-4">
+<h3 class="font-label-technical uppercase tracking-widest text-primary mb-6">LOCATION</h3>
+<p class="font-body-md text-body-md text-tertiary">
+                    São Paulo, SP<br/>
+                    Atendimento em toda região metropolitana.
+                </p>
+</div>
+<!-- Copyright -->
+<div class="md:col-span-12 mt-12 pt-8 border-t border-surface/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-technical text-label-technical uppercase text-tertiary">
+                    © 2024 VOLT_PRECISION. TECHNICAL EXCELLENCE GUARANTEED.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-tertiary">electrical_services</span>
+<span class="material-symbols-outlined text-tertiary">security</span>
+<span class="material-symbols-outlined text-tertiary">high_quality</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for scroll reveals
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
